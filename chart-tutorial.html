@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Visualization with Chart.js Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Data Visualization with Chart.js Tutorial</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="api-tutorial.html">API Tutorial</a>
+                <a href="chart-tutorial.html">Chart Tutorial</a>
+                <a href="author.html">Author</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>1. Introduction to Chart.js</h2>
+                <p>Chart.js is a JavaScript library that allows you to create responsive charts. In this web app a bar chart and pie chart were created, however there are 3 you can use. You can choose from various chart types including bar, line, pie, and more.</p>
+                <ul>
+                    <li><strong>Bar Chart:</strong> Displays data in rectangular bars, useful for comparing categories.</li>
+                    <li><strong>Line Chart:</strong> Shows data points connected by a line, ideal for trend analysis.</li>
+                    <li><strong>Pie Chart:</strong> Represents data as segments of a circle, useful for showing proportions.</li>
+                </ul>
+                <p>Include Chart.js in your HTML file by adding the following script tag:</p>
+                <pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</code></pre>
+            </section>
+
+            <section>
+                <h2>2. Creating a Bar Chart</h2>
+                <p>Here’s how to create a simple bar chart with Chart.js:</p>
+                <pre><code>
+&lt;canvas id="myBarChart" width="400" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const ctx = document.getElementById('myBarChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow'],
+        datasets: [{
+            label: 'Number of Votes',
+            data: [12, 19, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+&lt;/script&gt;
+                </code></pre>
+                <p>Customize the chart by adjusting properties such as labels, data, and colors.</p>
+            </section>
+
+            <section>
+                <h2>3. Creating a Line Chart</h2>
+                <p>To create a line chart, use the following example:</p>
+                <pre><code>
+&lt;canvas id="myLineChart" width="400" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const ctx = document.getElementById('myLineChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April'],
+        datasets: [{
+            label: 'Monthly Sales',
+            data: [65, 59, 80, 81],
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+&lt;/script&gt;
+                </code></pre>
+                <p>Modify the dataset and options to fit your data and desired appearance.</p>
+            </section>
+
+            <section>
+                <h2>4. Creating a Pie Chart</h2>
+                <p>To create a pie chart, use this example:</p>
+                <pre><code>
+&lt;canvas id="myPieChart" width="400" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const ctx = document.getElementById('myPieChart').getContext('2d');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow'],
+        datasets: [{
+            label: 'Colors Distribution',
+            data: [300, 50, 100],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206
+
+                

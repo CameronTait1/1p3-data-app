@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Data Visualization Dashboard</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="api-tutorial.html">API Tutorial</a>
+                <a href="chart-tutorial.html">Chart Tutorial</a>
+                <a href="author.html">Author</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="chart-section">
+                <h2>Weather Data Visualization</h2>
+                <p>This chart shows the current weather data including temperature, humidity, and pressure for London.</p>
+                <canvas id="weatherChart" width="400" height="200"></canvas>
+                <div class="chart-description">
+                    <h3>Chart Details</h3>
+                    <p>The bar chart represents different weather parameters:</p>
+                    <ul>
+                        <li><strong>Temperature:</strong> Current temperature in Celsius.</li>
+                        <li><strong>Humidity:</strong> Current humidity percentage.</li>
+                        <li><strong>Pressure:</strong> Atmospheric pressure in hPa.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h2>Cryptocurrency Prices</h2>
+                <p>This pie chart displays the current prices of Bitcoin and Ethereum.</p>
+                <canvas id="cryptoChart" width="400" height="200"></canvas>
+                <div class="chart-description">
+                    <h3>Chart Details</h3>
+                    <p>The pie chart visualizes the relative prices of:</p>
+                    <ul>
+                        <li><strong>Bitcoin:</strong> Current price in USD.</li>
+                        <li><strong>Ethereum:</strong> Current price in USD.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Data Visualization Dashboard</p>
+            <p>Contact: <a href="mailto:ctait300@caledonian.ac.uk">ctait300@caledonian.ac.uk</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
