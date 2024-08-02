@@ -40,8 +40,9 @@ To get a local copy up and running, follow these simple steps.
 
 3. Install the necessary dependencies:
    npm install
+   npm install chart.js
 
-4. Run app using live server:
+5. Run app using live server:
    live-server
 
    
